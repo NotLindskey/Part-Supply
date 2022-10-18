@@ -32,22 +32,17 @@ console.log("The numbers are now: ", supplyChanges);
 //    - if the value is negative, format the log as 'Removed x parts.'
 console.log("6. Showing supplyChanges...");
 
-for (let i = 3; i < supplyChanges.length; i++) {
+for (let i = 0; i < supplyChanges.length; i++) {
+	let change = supplyChanges[i];
 	if (i > 0) {
-		console.log("removed ", i, "parts");
+		console.log("removed ", change, "parts");
+	} else if (i === 0) {
+		console.log("No change");
 	}
-	if (i === 0);
-	let noChanges = supplyChanges[i];
-	{
-		console.log("No change", noChanges);
-	}
-	if (i < 0);
-	let positiveParts = supplyChanges[i];
-	{
-		console.log("added", positiveParts, "parts");
+	if (i < 0) {
+		console.log("added", change, "parts");
 	}
 }
-console.log(negativeParts);
 // STRETCH GOALS
 console.log("---  Stretch Goals  ---");
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
