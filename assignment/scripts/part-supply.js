@@ -59,7 +59,7 @@ console.log('7. Showing supplyChanges with "for of" loop');
 
 let sum = 0;
 for (let i = 0; i < supplyChanges.length; i++) {
-	sum += sum + supplyChanges[i];
+	sum += + supplyChanges[i];
 }
 console.log("8. Total supplies available is:", sum);
 
